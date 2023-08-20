@@ -1,3 +1,4 @@
+using System.Collections;
 using SocialApp.API.Models;
 
 namespace SocialApp.API.Data;
@@ -6,26 +7,28 @@ public class NotificationRepository : INotificationRepository
 {
     public bool SaveChanges()
     {
-        throw new NotImplementedException();
+        return true;
     }
 
     public void AddNotification(Notification notification)
     {
-        throw new NotImplementedException();
+        bool a = true;
     }
 
     public void RemoveNotification(Notification notification)
     {
-        throw new NotImplementedException();
+        bool a = true;
     }
 
     public IEnumerable<Notification> GetNotificationsByUser(int userId)
     {
-        throw new NotImplementedException();
+        IEnumerable<Notification> noti = new List<Notification>();
+        return noti;
     }
 
     public Notification GetSingleNotification(int notificationId)
     {
-        throw new NotImplementedException();
+        Notification noti = new();
+        return noti;
     }
 }
